@@ -13,5 +13,5 @@ Rails.application.routes.draw do
 # root "posts#index"
 #  get "list", to: "tasks#list", as: :list
 root "tasks#list"
-get "tasks", to: "tasks#detail"
+get "tasks/:id", to: "tasks#detail", as: :task
 end
