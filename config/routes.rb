@@ -13,5 +13,7 @@ Rails.application.routes.draw do
 # root "posts#index"
 #  get "list", to: "tasks#list", as: :list
 root "tasks#list"
+get "tasks/new", to: "tasks#new", as: :new_task
 get "tasks/:id", to: "tasks#detail", as: :task
+post "tasks", to: "tasks#create"
 end
