@@ -1,5 +1,6 @@
-<div class = "p-4">
+<div class="p-4">
   <h1><%= @task.title %></h1>
-  <p class ="p-4"><%= @task.details %></p>
+  <p class="p-4"><%= @task.details %></p>
   <%= link_to "Back to list", root_path %>
+  <%= link_to "Edit Task", edit_task_path(@task), class: "rounded-full bg-gray-800 px-3.5 py-2 text-sm font-semibold text-white shadow-xs hover:bg-gray-900 text-white" %>
 </div>
